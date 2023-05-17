@@ -1,0 +1,61 @@
+.MainLayout {
+    @apply flex flex-row gap-10 h-full;
+}
+
+.MainLayout_heading {
+    @apply flex flex-col justify-center;
+    height: 600px;
+    width: 25rem;
+}
+
+.MainLayout_content {
+    @apply relative m-0 p-0 h-full;
+    z-index: 3;
+}
+
+.MainLayout_heading_title {
+    @apply font-normal font-bold;
+    font-family: Unbounded-bold;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.MainLayout_heading_middle {
+    font-family: Unbounded-bold;
+    font-size: 4rem;
+}
+
+.MainLayout_heading_bottom {
+    font-family: Unbounded-bold;
+    font-size: 4rem;
+    color: #1bf3a4;
+}
+
+.MainLayout_heading_Mark {
+    @apply inline;
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.LearnMore {
+    @apply flex items-center justify-start p-0;
+    opacity: 0.6;
+    gap: 12.25px;
+    font-weight: 600;
+    color: #667085;
+}
+
+.LearnMore:hover {
+    color: #101828;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+    .MainLayout_heading {
+        display: none;
+    }
+    .MainLayout {
+        display: block;
+    }
+}

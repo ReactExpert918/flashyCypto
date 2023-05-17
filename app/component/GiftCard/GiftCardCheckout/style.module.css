@@ -1,0 +1,199 @@
+.Gift_checkout_wrap {
+    @apply flex flex-col items-start justify-center;
+    gap: 24px;
+}
+
+.Gift_checkout_main {
+    @apply flex flex-col items-start w-full;
+    padding: 0px;
+    gap: 16px;
+}
+
+.Gift_checkout_main_top {
+    @apply flex justify-between items-center p-0 w-full;
+    gap: 8px;
+}
+
+.Gift_checkout_main_top img {
+    cursor: pointer;
+}
+
+.Gift_checkout_main_top img:first-child {
+    width: 90px;
+}
+
+.Gift_checkout_main_bottom {
+    @apply flex justify-between items-start p-0 w-full;
+    gap: 46px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #101828;
+}
+
+.divide {
+    @apply w-full;
+    border: 1px solid #E4E7EC;
+}
+
+.Gift_checkout_detail {
+    @apply flex flex-col items-start p-0 w-full;
+    gap: 12px;
+}
+
+.Gift_checkout_detail_top {
+    @apply flex justify-between items-center p-0 w-full;
+    gap: 12px
+}
+
+.Gift_checkout_detail_bottom {
+    @apply flex justify-between items-start p-0 w-full;
+    gap: 8px;
+}
+
+.Gift_checkout_detail span {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Gray / 900 */
+    color: #101828;
+}
+
+.checkout_label {
+    color: #667085 !important;
+}
+
+
+/* /////////////Checkout//////////////////// */
+.Gift_checkout_pay {
+    @apply flex flex-col items-start p-0;
+    gap: 16px;
+}
+
+.Gift_checkout_pay_top {
+    @apply flex items-center justify-between p-0 w-full;
+    gap: 12px;
+}
+
+.NetworkDropdown {
+    @apply flex items-center border-none;
+    gap: 12px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Gray / 900 */
+    color: #101828;
+}
+
+.Network_confirm {
+    @apply flex justify-center items-center flex-row;
+    padding: 8px 12px;
+    gap: 10px;
+    background: #FFFAE5;
+    border-radius: 28px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Warning / 600 */
+
+    color: #DC6803;
+}
+
+.Gift_checkout_pay_bottom {
+    @apply flex justify-center items-center p-0 w-full;
+    gap: 12px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Gray / 900 */
+    color: #101828;
+}
+
+.pay_price_wrap {
+    @apply flex flex-col items-start justify-center;
+    width: 65%;
+    padding: 0px 24px;
+    gap: 2px;
+}
+
+.pay_price_wrap span:first-child {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Gray / 500 */
+
+    color: #667085;
+}
+
+.pay_price_wrap span:last-child {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    /* or 123% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    /* Gray / 900 */
+    color: #101828;
+}
+
+.pay_balance_wrap {
+    @apply flex flex-col items-start justify-center;
+    width: 35%;
+    padding: 10px 24px;
+    gap: 2px;
+}
+
+.pay_balance_wrap span:first-child {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Gray / 500 */
+    color: #667085;
+}
+
+.pay_token {
+    @apply flex items-center;
+    padding: 4px 0px;
+    gap: 12px;
+}

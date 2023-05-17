@@ -1,0 +1,89 @@
+.AppNavbar {
+    @apply flex items-center justify-between h-full;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.Logo {
+    width: 256px;
+    height: 102px;
+}
+
+.AppNavbar_links {
+    @apply flex items-center;
+    gap: 2.8rem;
+}
+
+.AppNabnar_links_details {
+    @apply flex items-center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #667085;
+}
+
+.AppNabnar_links_details:hover {
+    color: #101828;
+}
+
+.AppNabnar_links_details:first-child {
+    border-bottom: 2px solid #1bf3a4;
+    color: #101828;
+}
+
+.AppNavbar_hamburg {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .AppNavbar_hamburg {
+        display: block;
+    }
+    .AppNavbar_links {
+        display: none;
+    }
+    .AppNavbar {
+        padding: 0 10px;
+    }
+}
+
+.AppNavbar_mobile_wrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.32);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 12;
+}
+
+.AppNavbar_mobile {
+    @apply flex flex-col w-full absolute items-start;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1rem 0 10rem;
+    background: #fff;
+    height: 100vh;
+    max-width: 32rem;
+}
+
+.AppNavbar_mobile_header {
+    @apply flex justify-between w-full;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    padding: 0 2.4rem 1.2rem;
+}
+
+.AppNavbar_mobile_links_details {
+    padding: 2.4rem 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #667085;
+}

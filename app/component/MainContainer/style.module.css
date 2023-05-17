@@ -1,0 +1,60 @@
+.MainLayout_container {
+    @apply flex flex-col h-full relative;
+    background-color: #fff;
+    border-radius: 4rem;
+    -webkit-box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
+    -moz-box-shadow: 0 9px 24px rgba(0,0,0,.05),0 24px 234px rgba(55,242,173,.32);
+    box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
+    width: 30rem;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    gap: 1.6rem;
+}
+
+
+.MainLayout_dollar_coin {
+    @apply inline absolute;
+    top: 26rem;
+    left: -4rem;
+    z-index: -1;
+}
+
+.MainLayout_eth_coin {
+    @apply inline absolute;
+    top: 2rem;
+    right: -6rem;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px) {
+    .MainLayout_container {
+        width: 95%;
+        margin: auto;
+    }
+    .MainLayout_eth_coin {
+        display: none;
+    }
+    .MainLayout_dollar_coin {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .MainLayout_container {
+        width: 60%;
+        margin: auto;
+    }
+    .MainLayout_eth_coin {
+        display: none;
+    }
+    .MainLayout_dollar_coin {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    .MainLayout_container {
+        width: 30rem;
+    }
+}

@@ -1,0 +1,68 @@
+.SearchCountry_container {
+    @apply flex flex-col;
+}
+
+.SearchCountry_container_top {
+    @apply flex items-center justify-between;
+    border: 1px solid #E4E7EC;
+    border-radius: 15px;
+    padding: 12px 24px
+}
+
+.SearchCountry_container_top_country {
+    @apply flex items-center;
+}
+
+.SearchCountry_container_top_country span {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Gray / 900 */
+
+    color: #101828;
+    margin-left: 5px;
+}
+
+.SearchCountry_container_top_edit {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    text-align: right;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    
+    /* Gray / 900 */
+    
+    color: #101828;
+    cursor: pointer;
+}
+
+.SearchCountry_container_bottom {
+    @apply flex;
+    color: #026AA2;
+    padding: 0 24px;
+    padding-top: 10px;
+}
+
+.SearchCountry_container_bottom span {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    margin-left: 5px;
+}

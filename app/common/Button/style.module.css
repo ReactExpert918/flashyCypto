@@ -1,0 +1,40 @@
+.button_style {
+    @apply flex justify-center items-center m-auto;
+    padding: 8px 24px;
+    gap: 10px;
+    background: #101828;
+    border-radius: 95px;
+    width: 90%;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+
+.button_style_disabled {
+    @apply flex justify-center items-center m-auto;
+    padding: 8px 24px;
+    gap: 10px;
+    background: #98A2B3;
+    border-radius: 95px;
+    width: 90%;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #E4E7EC;
+}
+
+.mark img {
+    width: 20px;
+    height: 20px;
+}

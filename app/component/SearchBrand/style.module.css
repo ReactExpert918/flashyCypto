@@ -1,0 +1,35 @@
+.Search_brand_wrap {
+    @apply grid p-0 overflow-y-auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 16px;
+    max-height: 300px
+}
+
+.Search_brand_item {
+    @apply flex flex-col justify-center items-center;
+    gap: 8px;
+    padding: 24px 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(120, 120, 120, 0.04);
+    border: solid 1px #e4e7ec;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.Search_brand_item:hover {
+    border: 1px solid #1bf3a4;
+}
+
+.Search_brand_item_title {
+    font-family: PlusJakartaSans;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #101828;
+    text-align: center;
+}

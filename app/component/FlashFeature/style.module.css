@@ -1,0 +1,102 @@
+.SelectWidget_select_container {
+    padding: 2.4rem 1.6rem;
+    background: #fff;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    border-radius: 4rem;
+    -webkit-box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
+    -moz-box-shadow: 0 9px 24px rgba(0,0,0,.05),0 24px 234px rgba(55,242,173,.32);
+    box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
+    width: 100%;
+    max-width: 53.6rem;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.SelectWidget_select_card_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.2rem 1fr;
+    grid-template-rows: auto 1.6rem auto;
+}
+
+.SelectWidget_select_card {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #e4e7ec;
+    -webkit-box-shadow: 0 4px 20px rgba(0,0,0,.04);
+    -moz-box-shadow: 0 4px 20px rgba(0,0,0,.04);
+    box-shadow: 0 4px 20px rgba(0,0,0,.04);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 12rem;
+}
+
+.SelectWidget_select_card:hover {
+    border: 1px solid #1bf3a4;
+}
+
+.SelectWidget_crypto {
+    grid-column: 3/4;
+}
+
+.SelectWidget_bank {
+    grid-row: 1/2;
+}
+
+.SelectWidget_gifts {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.SelectWidget_phone {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.SelectWidget_select_img {
+    min-height: 4rem;
+    min-width: 4rem;
+}
+
+.SelectWidget_select_text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #101828;
+}
+
+.SelectWidget_center_bolt {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 1.8rem;
+    height: 1.8rem;
+    place-self: center;
+}

@@ -1,0 +1,46 @@
+.Search_input_wrap {
+    @apply flex relative flex-col justify-center
+}
+
+.Search_input:hover {
+    background: #e4e7ec;
+}
+
+.Search_icon {
+    @apply absolute;
+    left: 16px;
+}
+
+.Search_input {
+    height: 56px;
+    background-color: #f2f4f7;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    border-radius: 1.5rem;
+    color: #101828;
+    caret-color: #00c981;
+    border: none;
+    border: 1px solid rgba(226,234,244,.2);
+    padding: 16px 16px 16px 56px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    /* Gray / 500 */
+
+    color: #667085;
+}
+
+.Search_input:focus {
+    outline: none;
+    border: 1px solid #00c981;
+    background: #e4e7ec;
+    -webkit-box-shadow: 0 0 0 4px rgba(55,242,173,.1);
+    -moz-box-shadow: 0 0 0 4px rgba(55,242,173,.1);
+    box-shadow: 0 0 0 4px rgba(55,242,173,.1);
+}

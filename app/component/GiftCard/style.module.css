@@ -1,0 +1,70 @@
+.GiftCard_container {
+    padding: 2.4rem 1.6rem;
+    background: #fff;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    border-radius: 4rem;
+    -webkit-box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
+    -moz-box-shadow: 0 9px 24px rgba(0,0,0,.05),0 24px 234px rgba(55,242,173,.32);
+    box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
+    width: 100%;
+    max-width: 53.6rem;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.GiftCard_container_description {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+}
+
+.Send_email_wrap {
+    @apply flex flex-col items-start p-0;
+    gap: 8px;
+}
+
+.Send_email_wrap span {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #667085;
+}
+
+.Send_email_wrap input {
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    /* Gray / 100 */
+    background: #F2F4F7;
+    border-radius: 15px;
+}
+
+.Send_email_wrap input:hover {
+    background: #e4e7ec;
+}
+
+.Send_email_wrap input:focus {
+    outline: 1px solid #1bf3a4;
+    background: #e4e7ec;
+}
