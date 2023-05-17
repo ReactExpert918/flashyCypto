@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Unbounded:wght@600;700&display=swap');
 .GiftSelected_container_wrap {
     @apply flex p-0 items-start;
     gap: 16px;
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -18,45 +19,101 @@
 }
 
 .GiftSelected_amount_container {
-    @apply flex flex-col items-start p-0;
+    @apply flex flex-col items-start p-0 relative;
     gap: 8px;
     width: 70%;
 }
 
-.GiftSelected_amount_container select {
-    @apply flex items-center;
-    padding: 16px 24px 16px 16px;
+.GiftSelected_amount_container_active {
+    @apply flex flex-col items-start p-0 relative;
+    gap: 8px;
+    width: 70%;
+}
+
+.GiftSelected_amount_container_active .GiftSelected_amount_wrap {
+    background: #e4e7ec;
+    outline: 1px solid #1bf3a4;
+}
+
+.GiftSelected_amount_wrap:hover {
+    background: #e4e7ec;
+    outline: 1px solid #1bf3a4;
+}
+
+
+.GiftSelected_amount_wrap {
+    @apply flex items-center w-full justify-between;
     gap: 16px;
-    width: 100%;
-    height: 56px;
     background: #F2F4F7;
     border: 1px solid rgba(226, 234, 244, 0.2);
     border-radius: 15px;
+    padding: 16px 24px 16px 16px;
+    height: 56px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Gray / 500 */
+    color: #667085;
 }
 
-.GiftSelected_amount_container select:focus {
-    outline: 1px solid #1bf3a4;
-    background: #e4e7ec;
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 83px;
+    border-radius: 15px;
+}
+  
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.GiftSelected_quantity_wrap {
+    @apply flex items-center w-full justify-between;
+    gap: 16px;
+    background: #F2F4F7;
+    border: 1px solid rgba(226, 234, 244, 0.2);
+    border-radius: 15px;
+    padding: 16px 24px 16px 16px;
+    height: 56px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* Gray / 500 */
+    color: #667085;
 }
 
 .GiftSelected_quantity_container {
-    @apply flex flex-col items-start p-0;
+    @apply flex flex-col items-start p-0 relative;
+    gap: 8px;
+    width: calc(30% - 8px);
+}
+.GiftSelected_quantity_container_active {
+    @apply flex flex-col items-start p-0 relative;
     gap: 8px;
     width: calc(30% - 8px);
 }
 
-.GiftSelected_quantity_container select {
-    @apply flex items-center;
-    padding: 16px 24px 16px 16px;
-    gap: 16px;
-    width: 100%;
-    height: 56px;
-    background: #F2F4F7;
-    border: 1px solid rgba(226, 234, 244, 0.2);
-    border-radius: 15px;
+.GiftSelected_quantity_container_active .GiftSelected_quantity_wrap {
+    background: #e4e7ec;
+    outline: 1px solid #1bf3a4;
 }
 
-.GiftSelected_quantity_container select:focus {
-    outline: 1px solid #1bf3a4;
+.GiftSelected_quantity_wrap:hover {
     background: #e4e7ec;
+    outline: 1px solid #1bf3a4;
 }

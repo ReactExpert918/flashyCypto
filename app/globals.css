@@ -28,11 +28,22 @@ body {
 
 @layer utilities {
   main {
-    max-width: 970px;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 930px;
   }
   footer {
     height: 385px;
   }
+
+  @media screen and (min-width: 768px){
+    .mainClass {
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .nav-bar {
+      height: 72px;
+    }
+  }
+
 }

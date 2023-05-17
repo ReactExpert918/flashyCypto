@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Unbounded:wght@600;700&display=swap');
 .GiftCard_container {
-    padding: 2.4rem 1.6rem;
+    padding: 36px 32px 32px;
     background: #fff;
-    -webkit-border-radius: 4rem;
-    -moz-border-radius: 4rem;
-    border-radius: 4rem;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
     -webkit-box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
     -moz-box-shadow: 0 9px 24px rgba(0,0,0,.05),0 24px 234px rgba(55,242,173,.32);
     box-shadow: 0 9px 24px rgba(0,0,0,.05), 0 24px 234px rgba(55,242,173,.32);
-    width: 100%;
-    max-width: 53.6rem;
+    width: 480px;
+    max-width: 536px;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
@@ -18,11 +19,11 @@
     -moz-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 1.6rem;
+    gap: 32px;
 }
 
 .GiftCard_container_description {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -41,7 +42,7 @@
 }
 
 .Send_email_wrap span {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -67,4 +68,16 @@
 .Send_email_wrap input:focus {
     outline: 1px solid #1bf3a4;
     background: #e4e7ec;
+}
+@media screen and (max-width: 1024px) {
+    .GiftCard_container {
+        width: 536px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .GiftCard_container {
+        padding: 24px 16px;
+        width: 100%;
+    }
 }

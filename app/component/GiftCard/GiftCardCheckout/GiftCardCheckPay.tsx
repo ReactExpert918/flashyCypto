@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import styles from './style.module.css';
 
 const GiftCardCheckPay: React.FC = () => {
+    const [value, setValue] = useState(0.034);
+    const onChange = (e: any) => {
+        setValue(e.target.value)
+    }
     return(
         <div className={styles['Gift_checkout_pay']}>
             <div className={styles['Gift_checkout_pay_top']}>
@@ -19,7 +24,7 @@ const GiftCardCheckPay: React.FC = () => {
                 <img src='assets/svg/downArrow.svg' /> */}
                 <div className={styles['pay_price_wrap']}>
                     <span>You Pay</span>
-                    <span>0.034</span>
+                    <input onChange={(e) => {onChange(e)}} value={value} />
                 </div>
                 <div className={styles['pay_balance_wrap']}>
                     <span>Balance: 0.0</span>

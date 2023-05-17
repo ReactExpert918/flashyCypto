@@ -15,6 +15,7 @@ const GiftSuccess: React.FC = () => {
                         <span>0.044 ETH</span>
                     </div>
                 </div>
+                <div className={styles['divide']}></div>
                 <div className={styles['Gift_checkout_main']}>
                     <div className={styles['Gift_checkout_main_top']}>
                         <img src="assets/svg/spotify.svg" />

@@ -1,25 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Unbounded:wght@600;700&display=swap');
 .AppNavbar {
     @apply flex items-center justify-between h-full;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 64px;
+    padding-right: 64px;
 }
 
 .Logo {
     width: 256px;
     height: 102px;
+    z-index: 100;
+    position: relative;
 }
 
 .AppNavbar_links {
     @apply flex items-center;
-    gap: 2.8rem;
+    gap: 58px;
 }
 
 .AppNabnar_links_details {
     @apply flex items-center;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
     font-weight: 600;
     color: #667085;
+    height: 34px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .AppNabnar_links_details:hover {
@@ -35,17 +40,6 @@
     display: none;
 }
 
-@media screen and (max-width: 800px) {
-    .AppNavbar_hamburg {
-        display: block;
-    }
-    .AppNavbar_links {
-        display: none;
-    }
-    .AppNavbar {
-        padding: 0 10px;
-    }
-}
 
 .AppNavbar_mobile_wrap {
     width: 100%;
@@ -74,16 +68,52 @@
 .AppNavbar_mobile_header {
     @apply flex justify-between w-full;
     border-bottom: 1px solid rgba(0,0,0,.08);
-    padding: 0 2.4rem 1.2rem;
+    padding: 0 24px 12px;
+    height: 70px;
 }
 
 .AppNavbar_mobile_links_details {
-    padding: 2.4rem 0;
+    padding: 24px 0;
     text-align: center;
     width: 100%;
     border-bottom: 1px solid rgba(0,0,0,.08);
     font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: 16px;
+    line-height: 24px;
     color: #667085;
+}
+.AppNavbar_mobile_links_details_active {
+    border-bottom: 1px solid #1bf3a4;
+    padding: 24px 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+}
+@media screen and (max-width: 1024px) {
+    .Logo {
+        width: 80px;
+    }
+    .AppNavbar {
+        padding: 0 48px;
+    }
+    .AppNabnar_links_details {
+        font-size: 12px;
+    }
+    .AppNavbar_links {
+        gap: 32px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .AppNavbar_hamburg {
+        display: block;
+    }
+    .AppNavbar_links {
+        display: none;
+    }
+    .AppNavbar {
+        padding: 0 24px;
+    }
 }

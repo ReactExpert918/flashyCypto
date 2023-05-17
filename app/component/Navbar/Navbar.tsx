@@ -22,10 +22,10 @@ const Navbar: React.FC<{}> = () => {
           <div className={styles['AppNavbar_mobile_wrap']}>
             <div className={styles['AppNavbar_mobile']}>
               <div className={styles['AppNavbar_mobile_header']}>
-                <img className={styles['Logo']} alt="flashy logo" src="assets/svg/logo.svg" />
+                <img className={styles['Logo_mobile']} alt="flashy logo" src="assets/svg/logo.svg" />
                 <img  onClick={() => setClose(false)} src="assets/svg/close.svg" />
               </div>
-              <a className={styles['AppNavbar_mobile_links_details']} href='/'>Home</a>
+              <a className={styles['AppNavbar_mobile_links_details_active']} href='/'>Home</a>
               <a className={styles['AppNavbar_mobile_links_details']} href='/'>Aboutus</a>
               <a className={styles['AppNavbar_mobile_links_details']} href='/'>Partners</a>
             </div>

@@ -4,10 +4,10 @@ import Main from "./component/Main/Main";
 export default function Home() {
   return (
     <section className="flex min-h-screen flex-col bg-landing items-center justify-between gap-100 ">
-      <div className='w-full border-none h-nav'>
+      <div className='w-full border-none h-nav nav-bar'>
         <Navbar />
       </div>
-      <main className='pt-300 w-full mt-20'>
+      <main className='pt-300 w-full mainClass'>
         <Main />
       </main>
       <footer className='w-full mt-20'></footer>

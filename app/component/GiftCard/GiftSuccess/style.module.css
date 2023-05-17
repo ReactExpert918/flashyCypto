@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Unbounded:wght@600;700&display=swap');
 .Gift_success_wrap {
     @apply flex flex-col items-center;
     gap: 32px;
@@ -5,11 +6,15 @@
 
 .Gift_success_top {
     @apply flex flex-col items-center justify-between;
-    gap: 16px;
+    gap: 32px;
+}
+
+.divide {
+    border: 1px solid #E4E7EC;
 }
 
 .Gift_success_top p {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -24,14 +29,17 @@
 }
 
 .Gift_success_result {
-    @apply flex flex-col items-start p-0 w-full;
-    gap: 32px;
+    @apply flex flex-col items-start w-full;
+    gap: 25px;
+    padding: 24px;
+    border: 1px solid #E4E7EC;
+    border-radius: 20px;
 }
 
 .Gift_sent_wrap {
     @apply flex flex-col items-start p-0 w-full;
-    gap: 8px;
-    font-family: 'Plus Jakarta Sans';
+    gap: 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -43,7 +51,7 @@
 }
 
 .Gift_sent_wrap span:first-child {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -66,7 +74,7 @@
 
 .Gift_checkout_main_top {
     @apply flex items-center justify-between p-0 w-full;
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -79,7 +87,7 @@
 
 .Gift_checkout_main_bottom {
     @apply flex items-center justify-between p-0 w-full;
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -91,7 +99,7 @@
     color: #667085;
 }
 .Gift_checkout_main_bottom span:first-child {
-    font-family: 'Plus Jakarta Sans';
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
