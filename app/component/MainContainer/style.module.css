@@ -57,4 +57,10 @@
     .MainLayout_container {
         width: 30rem;
     }
+    .MainLayout_eth_coin {
+        display: block;
+    }
+    .MainLayout_dollar_coin {
+        display: block;
+    }
 }
